@@ -1,0 +1,8 @@
+{{#foreach posts}}
+{{date format='dddd DD MMM YYYY'}}
+{{title}}
+{{content}}
+{{#if tags}}
+Tags: {{tags separator=" | "}}
+{{/if}}
+{{/foreach}}
