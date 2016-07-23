@@ -1,8 +1,15 @@
+<main role="main">
 {{#foreach posts}}
+<article class="article_uber" role="article" itemscope itemtype="http://schema.org/Article">
 {{date format='dddd DD MMM YYYY'}}
 {{title}}
 {{content}}
 {{#if tags}}
 Tags: {{tags separator=" | "}}
 {{/if}}
+</article>
 {{/foreach}}
+{{#if pagination}}
+{{{pagination}}}
+{{/if}}
+</main>
